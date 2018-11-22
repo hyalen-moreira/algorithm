@@ -14,7 +14,7 @@ public class MatrixPathTest extends BaseTest {
     @TestConfiguration
     static class SolutionTestContextConfiguration {
         @Bean
-        public MatrixPath solution() {
+        public MatrixPath getMatrixPath() {
             return new MatrixPath();
         }
     }
@@ -33,6 +33,6 @@ public class MatrixPathTest extends BaseTest {
     public void numberOfPathsSpaceOptimization() {
         int maze[][] = new int[4][4];
 
-        assertThat(matrixPath.numberOfPaths(maze), is(equalTo(20)));
+        assertThat(matrixPath.numberOfPathsSpaceOptimization(maze), is(equalTo(20)));
     }
 }

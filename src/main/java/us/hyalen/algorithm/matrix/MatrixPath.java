@@ -39,4 +39,10 @@ public class MatrixPath {
 
         return dp[numColumns - 1];
     }
+
+    public int numberOfPathsWithObstacules(int[][] maze) {
+        
+
+        return 0;
+    }
 }
